@@ -689,7 +689,7 @@
 	#header
 	{
 		position: relative;
-		background-image: url('../images/header2.jpg');
+		background-image: url('../images/header5.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -697,8 +697,18 @@
 		text-align: center;
 		padding: 2.5em 0 2em 0;
 		cursor: default;
-		-webkit-filter: saturate(1.2);
 	}
+
+		#header a
+		{
+			color:white;
+		}
+		#header strong
+		{
+			color:white;
+			font-weight: 400;
+			font-size: 1.5em;
+		}
 
 		.homepage #header
 		{
