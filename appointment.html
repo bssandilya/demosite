@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Helios by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>No Sidebar - Helios by HTML5 UP</title>
+		<title>Appointment</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -75,14 +70,34 @@
 				<div class="container">
 					<article id="main" class="special">
 						<header>
-							<h2><a href="#">Financial Options</a></h2>
+							<h2><a href="#">Request an appointment</a></h2>
 							<p>
 								<img src="images/finance_visa.png"></img>
 								<img src="images/finance_master.png"></img>
 							</p>
 						</header>
+						<p>To schedule an appointment with Castro Commons General Dentistry you may call our office at 650.965.1595
+							or complete the appointment request form below.
+							We will then contact you within one business day to confirm your appointment.
+						</p>
+						<p>If this is an emergency, or if you are trying to cancel or change an existing appointment, please do not use this form.
+							Contact us by phone at 650.965.1595.
+						</p>
 						<p>
-							At Castro Commons, we'll submit your insurance claim forms electronically for your convenience. To facilitate the insurance process, it will be helpful to have your insurance information prior to your first appointment. Every attempt is made to contact your insurance to get the best estimate of your coverage. Please note that it is only an estimate from your insurance carrier. All payments are due the day services are rendered unless other financial arrangements are made with the office manager.</p><p><strong> We accept cash, check, money order, Visa, and Master Card</strong>.</p><p> We understand that unexpected dental bills can sometimes strain finances.If this happens, talk with us immediately by calling us at 650.965.1595. If you help us keep the lines of communication open, we can usually work out acceptable arrangements.</p>
+							<form action="http://www.ident.ws/template_include/sendemail.jsp" method="post" name="appointmentrequest" id="appointmentrequest2">
+								First Name <input type="text" name="firstname" size="30"><br>
+								Last  Name <input type="text" name="lastname" size="30"><br>
+								Last  Name <input type="text" name="address" size="30"><br>
+								Last  Name <input type="text" name="city" size="30"><br>
+								Last  Name <input type="text" name="state" size="30"><br>
+								Last  Name <input type="text" name="zip" size="30"><br>
+								Last  Name <input type="text" name="phone" size="30"><br>
+								Last  Name <input type="text" name="email" size="30"><br>
+								Preferred Dates <textarea name="dates" rows="2" cols="25"></textarea><br>
+								Preferred Times <textarea name="times" rows="2" cols="25"></textarea><br>
+								Please describe your symptoms<textarea name="symptoms" rows="5" cols="66"></textarea><br>
+								<input type="submit" name="send" value="Send" onclick="appointment_send()">
+							</form>
 						</p>
 					</article>
 				</div>
